@@ -1,4 +1,5 @@
 from sentence_transformers import SentenceTransformer
+import torch
 import faiss
 from tqdm import tqdm
 import pandas as pd
@@ -7,7 +8,7 @@ ratings = pd.read_csv("ratings_reduzido.csv")
 
 model_name = "sentence-transformers/distiluse-base-multilingual-cased-v2"
 
-device = "cuda"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 model = SentenceTransformer(model_name, device=device)
 
