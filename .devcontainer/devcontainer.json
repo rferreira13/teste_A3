@@ -1,0 +1,31 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+    "name": "Test Python Development Environment",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".",
+        "args": {
+            "PYTHON_ENV": "teste_A3_docs_env"
+        }
+    },
+    "runArgs": [
+        "--gpus",
+        "all"
+    ],
+    "customizations": {
+        "settings": {
+            "python.defaultInterpreterPath": "opt/teste_A3_docs_env/bin/python"
+        },
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "ms-python.python",
+                "ms-vscode-remote.remote-containers",
+                "ms-toolsai.jupyter",
+                "charliermarsh.ruff"
+            ]
+        }
+    }
+}
+

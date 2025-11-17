@@ -1,0 +1,32 @@
+--index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://pypi.org/simple
+torch==2.4.1
+numpy<2
+matplotlib
+gradio
+requests
+pydantic
+tqdm
+pandas
+ipykernel
+ipywidgets
+jupyter
+jupyterlab
+mkdocs==1.6.1
+mkdocs-material==9.5.25
+mkdocs-jupyter==0.24.8
+pymdown-extensions==10.8
+statsmodels
+seaborn
+scikit-learn
+sentence-transformers
+faiss-gpu-cu11
+accelerate
+bitsandbytes
+langgraph
+mlflow
+dash_bootstrap_components
+dash
+plotly
+levenshtein
+gdown
